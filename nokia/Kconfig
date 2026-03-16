@@ -1,0 +1,9 @@
+menu "SPI device driver"
+
+config NOKIA
+    tristate "Descriptor-based SPI"
+    depends on ARM64
+    default m if ARM64
+    help
+        Select this option to run nokia5510 module.
+endmenu
